@@ -1,0 +1,9 @@
+
+.course-image{
+    transition: transform 0.3s ease;
+}
+
+.course-image:hover{
+    transform: scale(1.2);
+}
+

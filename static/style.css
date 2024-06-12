@@ -1,0 +1,20 @@
+.comp-info{
+    background: rgba(82, 105, 241, 0.8) ;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  #footer {
+    bottom: 0;
+    color: #707070;
+    height: 2em;
+    left: 0;
+    position: fixed;
+    font-size: small;
+    width:100%;
+    z-index:9;
+}
+
