@@ -63,7 +63,12 @@
 
                 </div>
                 </div>
-                <?php if(!in_array($courseId,$_SESSION['courses'])) : ?>
+                <?php 
+                if (!isset($_SESSION['courses'])) {
+                    $_SESSION['courses'] = []; // Initialize courses as an empty array if not set
+                }
+                
+                if(!in_array($courseId,$_SESSION['courses'])) : ?>
                     <form action="" method="post">
                         <button type="submit" name="join" id="join" class="btn btn-primary mt-3" style="float: right;">Enroll Now</button>
                     </form>
